@@ -1,23 +1,23 @@
-# ANN-PyTorch: Iris Verisi ile Basit Yapay Sinir Ağı
+# ANN-PyTorch: Simple Neural Network on the Iris Dataset
 
-Bu proje, PyTorch kullanılarak geliştirilmiş, Iris veri seti üzerinde çalışan 3 katmanlı tam bağlantılı (fully connected) yapay sinir ağı (ANN) modelidir. Basit bir mimariyle sınıflandırma problemini çözmek isteyenler için güzel bir başlangıç örneğidir.
+This project features a simple 3-layer fully connected (ANN) neural network built using PyTorch and trained on the Iris dataset. It serves as a solid starting point for those looking to understand basic neural network implementation and classification tasks.
 
-## Proje Yapısı
+## Project Structure
 
-- **`model.py`**: Yapay sinir ağı mimarisini tanımlar.
-- **`train.py`**: Modelin eğitildiği dosya. Hiperparametre ayarları ve eğitim döngüsü burada yer alır.
-- **`test.py`**: Eğitilen modelle yeni veriler üzerinden test yapılır.
+- **`model.py`**: Defines the architecture of the neural network.
+- **`train.py`**: Trains the model. Includes hyperparameter settings and the training loop.
+- **`test.py`**: Tests the trained model with new input data.
 
-## Model Özellikleri
+## Model Details
 
-- **Giriş Katmanı**: 4 boyutlu iris özellik vektörü
-- **Gizli Katmanlar**: Fully connected katmanlar
-- **Çıkış Katmanı**: 3 sınıf (Setosa, Versicolor, Virginica)
-- **Aktivasyon Fonksiyonu**: `ReLU`
-- **Kayıp Fonksiyonu**: `CrossEntropyLoss`
-- **Optimizasyon**: `Adam`
+- **Input Layer**: 4-dimensional vector (sepal/petal length and width)
+- **Hidden Layers**: Fully connected (dense) layers
+- **Output Layer**: 3 classes (Setosa, Versicolor, Virginica)
+- **Activation Function**: `ReLU`
+- **Loss Function**: `CrossEntropyLoss`
+- **Optimizer**: `Adam`
 
-## Eğitim
+## Training
 
 ```bash
 python train.py
