@@ -13,7 +13,7 @@ Bu proje, PyTorch kullanılarak geliştirilmiş, Iris veri seti üzerinde çalı
 - **Giriş Katmanı**: 4 boyutlu iris özellik vektörü
 - **Gizli Katmanlar**: Fully connected katmanlar
 - **Çıkış Katmanı**: 3 sınıf (Setosa, Versicolor, Virginica)
-- **Aktivasyon Fonksiyonu**: `ReLU`, son katmanda `Softmax`
+- **Aktivasyon Fonksiyonu**: `ReLU`
 - **Kayıp Fonksiyonu**: `CrossEntropyLoss`
 - **Optimizasyon**: `Adam`
 
