@@ -29,7 +29,7 @@ optimizer = torch.optim.Adam(model.parameters(),lr=1e-3)
 #train
 losses = []
 best_loss = float("inf")
-for epoch in range(100):
+for epoch in range(1000):
     y_pred = model.forward(X_train)
     loss = criterion(y_pred,Y_train)
     losses.append(loss.item())
